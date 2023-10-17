@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>My Wetherapp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <body>
+        <div class="Box">
+            <header>
+                <i class="fa-solid fa-arrow-left-long"></i>Weather App
+            </header>
+            <section>
+                <div id="Middle_bar">
+                    <div id="text-info">Please enter a valid city name</div>
+                    <div><input type="text" placeholder="Entere city name" required></div>
+                    <div id="seperator"></div>
+                    <button id="submit_button">Get Device Location</button>
+            </section>
+            <section class="weather-part">
+                <img src="./Weather Icons/cloud.svg" alt="">
+                <div id="temp">
+                    <span id="dumb-temp">13</span>
+                    <span id="degree">°C</span>
+                </div>
+                <div id="weather-condition">
+                    <div>Broken Clouds</div>
+                </div>
+                <div id="area-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Katmandu, Nepal</span>
+                </div>
+
+                <!-- Feels Like  -->
+                <div id="feels-temp">
+                    <div id="Feels-like-box1">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                        <span id="dumb-temp">17</span>
+                        <span id="degree">°C</span>
+                        <div id="box-text">Feels Like</div>
+                    </div>
+                    <div id="Feels-like-box2">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span id="dumb-temp">84%</span>
+                        <div id="box-text">Hummidity</div>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
