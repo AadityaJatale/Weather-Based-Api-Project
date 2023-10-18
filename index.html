@@ -26,7 +26,7 @@
             </header>
             <section>
                 <div id="Middle_bar">
-                    <div id="text-info">Please enter a valid city name</div>
+                    <div id="text-info"></div>
                     <div><input type="text" placeholder="Entere city name" required></div>
                     <div id="seperator"></div>
                     <button id="submit_button">Get Device Location</button>
@@ -34,29 +34,31 @@
             <section class="weather-part">
                 <img src="./Weather Icons/cloud.svg" alt="">
                 <div id="temp">
-                    <span id="dumb-temp">13</span>
+                    <span id="dumb-temp">__</span>
                     <span id="degree">°C</span>
                 </div>
                 <div id="weather-condition">
-                    <div>Broken Clouds</div>
+                    <div id="wether-atmos">___</div>
                 </div>
                 <div id="area-location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>Katmandu, Nepal</span>
+                    <span id="city">_____</span>
+                    <span id="country">____</span>
                 </div>
 
                 <!-- Feels Like  -->
                 <div id="feels-temp">
                     <div id="Feels-like-box1">
                         <i class="fa-solid fa-temperature-three-quarters"></i>
-                        <span id="dumb-temp">17</span>
-                        <span id="degree">°C</span>
-                        <div id="box-text">Feels Like</div>
+                        <span id="dumb-temp-2">__</span>
+                        <span class="degree">°C</span>
+                        <div class="box-text">Feels Like</div>
                     </div>
                     <div id="Feels-like-box2">
                         <i class="fa-solid fa-droplet"></i>
-                        <span id="dumb-temp">84%</span>
-                        <div id="box-text">Hummidity</div>
+                        <span id="box-text-humid">__</span>
+                        <span class="degree">%</span>
+                        <div class="box-text">Humidity</div>
                     </div>
                 </div>
 

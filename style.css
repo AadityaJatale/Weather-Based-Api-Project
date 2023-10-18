@@ -32,6 +32,22 @@ body{
     cursor: pointer;
 }
 
+.Box.active header i{
+   display: none;
+}
+.Box.active header {
+    padding-left: 50px;
+    font-size:30px;
+}
+
+.Box.active #Middle_bar{
+    display: none;
+}
+
+.Box.active .weather-part{
+    display: flex;
+}
+
 body section{
     justify-content: center;
 }
@@ -43,33 +59,32 @@ body section{
     margin-bottom: 20px;
 }
 
-#text-info-error{
+#text-info.error{
     height: 40px;
     border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
     background: rgb(239, 31, 31);
     color: pink;
     display: block;
-}
-
-#text-info-pending{
-    height: 40px;
-    border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#text-info.pending{
+    height: 40px;
+    border-radius: 7px;
     margin-bottom: 20px;
     background: rgb(114, 212, 114);
     color: white;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #Middle_bar{
     padding: 30px;
-    display: none;
+    /* display: none; */
 }
 #Middle_bar input{
     width: 100%;
@@ -78,6 +93,7 @@ body section{
     border-radius: 7px;
     text-align: center;
 }
+
 
 #seperator{
    height: 1px;
@@ -112,30 +128,30 @@ body section{
     justify-content: center;
     align-items: center;
     margin: 20px 0px 0px 0px ;
+    display: none;
 }
 
 .weather-part img{
     max-width: 125px;
     margin-bottom: 10px;
 }
-#dumb-temp,#degree{
-    font-size: 70px;
+#degree,#dumb-temp-2{
+    font-size: 25px;
     font-weight:bold;
 }
-#weather-condition,#area-location{
-    font-size: large;
+#weather-condition,#area-location,#box-text-humid{
+    font-size: 25px;
     margin-bottom: 10px;
     font-weight: 600;
 }
 #feels-temp{
     width: 100%;
     display: flex;
-
     border-top: 1px solid;
 }
 
 #Feels-like-box1{
-    padding:10px 60px 10px 0px;
+    padding:10px 55px 10px 0px;
     border-right: 1px solid;
     padding-left: 0px;
     font-size: 30px;
@@ -144,12 +160,19 @@ body section{
     margin-left: 50px;
 }
 
-#dumb-temp,#degree{
-    font-size: 25px;
+#dumb-temp{
+    font-size: 30px;
     color: black;
+    font-weight: 600;
 }
-#box-text{
-    font-size: 10px;
+
+.degree{
+    font-size: 15px;
+    color: black;
+    margin-left: 0%;
+}
+.box-text{
+    font-size: 13px;
     padding-left:30px;
     color: black;
 }
