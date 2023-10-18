@@ -4,6 +4,7 @@ infoTxt=inputPart.querySelector("#text-info"),
 inputField=inputPart.querySelector("input");
 locationBtn=inputPart.querySelector("button");
 wIcon=document.querySelector(".weather-part img");
+arrowback=Box.querySelector(".Box header i");
 
 let api;
 inputField.addEventListener("keyup",e =>{
@@ -77,7 +78,7 @@ function weatherDetails(info){
             wIcon.src="Weather Icons/cloud.svg"
         }
         else{
-            
+
         }
         Box.querySelector("#city").innerText=city;
         Box.querySelector("#country").innerText=country;
@@ -93,3 +94,7 @@ function weatherDetails(info){
 
     }
 }
+
+arrowback.addEventListener("click",()=>{
+    Box.classList.remove("active");
+});

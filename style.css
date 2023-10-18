@@ -32,13 +32,7 @@ body{
     cursor: pointer;
 }
 
-.Box.active header i{
-   display: none;
-}
-.Box.active header {
-    padding-left: 50px;
-    font-size:30px;
-}
+
 
 .Box.active #Middle_bar{
     display: none;
